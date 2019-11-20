@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 img = cv2.imread(sys.argv[1],0)
 ogimg = img
 (thresh, img) = cv2.threshold(img, 225, 255, cv2.THRESH_BINARY)
-img = cv2.blur(img, (1, 1280))
+#img = cv2.blur(img, (1, 1280))
 
 f = np.fft.ifft2(img)
 fshift = np.fft.fftshift(f)
@@ -33,5 +33,8 @@ plt.title('Processed Image'), plt.xticks([]), plt.yticks([])
 
 plt.subplot(224),plt.plot(graph)
 plt.title('FFT'), plt.xticks([]), plt.yticks([])
+
+# plt.subplot(224),plt.imshow(magnitude_spectrum, cmap = 'gray')
+# plt.title('FFT'), plt.xticks([]), plt.yticks([])
 
 plt.show()
