@@ -1,4 +1,4 @@
-# SmartViz Google Cloud Function Backend
+# Manufacture Instrument Recognition: SmartViz's Google Cloud Function Backend
 This repo contains the testing files for the individual algorithms employed in the backend, as well as ```gcloud_function.py``` to track the exact code in the Cloud Function.
  
 ## Release Notes
@@ -52,5 +52,5 @@ python identify.py
 * Click Deploy
 
 #### Run
-The backend is now deployed. To test it with the UI, please download and run the UI from https://github.com/TimQiu20/Screw-Identifier.
+The backend is now deployed. To test it with the UI, please download and run the UI from https://github.com/TimQiu20/Manufacture-Instrument-Recognition-UI.
 Please keep in mind that the backend is likely already deployed to the console, as the latest release published here would already have been uploaded. If this is the case, you can simply test by testing the UI.
